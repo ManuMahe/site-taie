@@ -1,0 +1,480 @@
+/* DOCUMENT INFORMATION
+    - Document thé thème
+    - version : 1.0.0
+    - Auteur : Emmanuel
+*/
+
+/* COLORS
+    - defaut body text  #eee
+    - h1                #eee
+    - h2                #000
+    - h3
+
+    - button
+    - button:hover
+
+    -icon               rgb(0, 153, 255)
+
+    - border
+
+ */
+
+ /* FONTS
+    - Default   Indie Flower
+    - Subtitle
+
+  */
+
+  /* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+
+  */
+
+  /* GLOBAL
+  ================================================================ */
+
+  html 
+  {
+      background-color: #fff
+  }
+
+  h1, h2, h3, h4
+  {
+    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 8px;
+  }
+  
+  h1 {
+    color: #eee;
+  }
+
+  h2 {
+    color: #000;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(0, 153, 255);
+    ;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-size: 160%;
+  }
+
+  
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    /* height: 24px; */
+  }
+
+  section {
+    padding: 30px 0 60px 0;
+  }
+  /* NAVBAR
+  =============================================================== */
+
+.navbarTaies {
+  background-color: rgb(0, 153, 255);
+
+}
+
+  /* HEADER
+  =============================================================== */
+
+  header
+  {
+      background-image: linear-gradient(  rgba(18, 22, 221, 0.6),
+                                          rgba(0, 153, 255,0.6),
+                                            rgba(255, 255, 255, 0.6),
+                                            rgba(255, 255, 255, 1)
+                                        ), 
+                                        url(../images/headerBackground.jpg);
+        height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .home-title
+  {
+      position: absolute;
+      top: 30%;
+  }
+
+  .home-title h1 
+  {
+    font-size: 340%;
+  }
+
+.home-title h1 span
+{
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.home-title p
+{
+    color: #fff;
+}
+
+/* Button */
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 30ox;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 20px;
+}
+
+.btn-full 
+{
+    background-color: azure;
+    color: rgb(0, 153, 255);
+ 
+}
+
+.btn-ghost
+{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-full:hover
+{
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+}
+
+.btn-ghost:hover 
+{
+    background-color: rgb(0, 153, 255);
+    color: #fff;
+    border: 1px solid rgb(0, 153, 255);
+}
+
+
+  /* PRODUITS
+  =============================================================== */
+
+
+.produits-plus {
+  margin : 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+  color : rgb(18, 10, 110);
+  transform: translateX(20px);
+}
+
+.produits-img {
+    height: 500px;
+    width: auto;
+    overflow: hidden;
+}
+
+.produits-icon {
+  font-size: 34px;
+  color : rgb(0, 153, 255);
+  transition: all 1s;
+}
+
+  /* COULEURS TAIES
+  =============================================================== */
+
+.famille-taies {
+  background-image: linear-gradient( rgba(255,255,255,1),
+  rgba(255,255,255,0.6),
+  rgba(0, 153, 255,0.6),
+  rgba(18, 22, 221, 0.6)) ; 
+
+}
+
+.famille-détails {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+
+.famille-détails img {
+  display: block;
+  max-height: 230px;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+
+}
+
+.famille-détails h4 {
+  text-align: center;
+}
+
+  /* GALERIES PHOTOS
+  =============================================================== */
+
+  .galeries-photos {
+    background-image: linear-gradient(  rgba(18, 22, 221, 0.6),
+    rgba(0, 153, 255,0.6),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 1));
+  }
+
+  .galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+  }
+
+  .galeries-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+
+
+  .galeries-titre h4 {
+    color:  #fff;
+
+
+  }
+
+  .galeries-titre h4:hover {
+    color: rgb(0, 153, 255);
+    transition : 1s;
+  }
+
+    /* CLIENTS
+  =============================================================== */
+
+  .clients {
+    background-image: linear-gradient( rgba(255,255,255,1),
+    rgba(255,255,255,0.6),
+    rgba(0, 153, 255,0.6),
+    rgba(18, 22, 221, 0.6)), url(../images/pillow2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .clients h2 {
+    color: #fff;
+  }
+
+  .clients h2::after {
+    background-color: #fff;
+  }
+
+  .clients blockquote {
+    padding: 5px;
+    font-style : italic;
+    line-height: 130%;
+    color: #fff;
+  }
+
+  blockquote::before {
+    content:"\201C";
+    font-size : 110px;
+    font-family: 'Parisienne';
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    color: rgba(255,255,255,0.7)
+  }
+
+  blockquote:hover {
+    transform: scale(1.25);
+    transition: all 1s;
+  }
+
+  cite {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 90%;
+    margin-top: 20px;
+  }
+.imagecite {
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+  }
+
+      /* PACKS
+  =============================================================== */
+
+.pack {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.pack h3 {
+  color :  green;
+
+}
+
+.pack h4 {
+  font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pack span {
+  font-weight: 100;
+  font-size: 40%;
+  position: relative;
+  top: -10px;
+  left: 2px;
+}
+
+.pack-premium {
+  background-color: rgb(0, 153, 255);
+  color: #fff;
+}
+
+.pack-elite {
+  background-image: linear-gradient(gold, black);
+}
+
+.pack-elite ul {
+  font-size: 110%;
+  color: white;
+}
+
+.pack-title {
+  padding: 10px 10px 0 10px;
+  border-bottom: 1px solid lightgray;
+
+}
+
+.pack-title-premium {
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+.pack-content ul{
+  list-style: none;
+  padding: 20px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.pack-content ul li i {
+  font-size: 90%;
+  margin-right: 10px;
+}
+
+.pack-signup {
+  text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+  background-color: rgb(50, 204, 50);
+  color: #000;
+
+}
+.btn-pack {
+  background-color:green;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+      /* CONTACTS
+  =============================================================== */
+
+.section-contact {
+  background-image: linear-gradient( rgba(255,255,255,1),
+  rgba(255,255,255,0.6),
+  rgba(0, 153, 255,0.6),
+  rgba(18, 22, 221, 0.6)) ; 
+}
+
+.contact-form {
+  margin-bottom: 30px;
+}
+
+.contact-message {
+  width: 100%;
+}
+
+.btn-contact {
+  border: 1px solid rgb(0, 153, 255);
+  color:  rgb(0, 153, 255);
+}
+
+.btn-contact:hover {
+  background-color: rgb(0, 153, 255);
+  color: #fff;
+  border: 1px solid rgb(0, 153, 255);
+}
+
+.map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+      /* FOOTER
+  =============================================================== */
+
+footer {
+  background-image: linear-gradient( rgba(18, 22, 221, 0.6),
+  rgba(18, 22, 221, 0.8),
+  rgba(18, 22, 221, 1)) ; 
+  color: #fff;
+  height: 80px;
+  padding: 20px 20px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a {
+  color: #fff;
+}
